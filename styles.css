@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@500;700&display=swap');
+
+body{
+    background-color: #ee6055;
+}
+
+header{
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img{
+    width: 5vw;
+    
+}
+
+h1{
+    display: none;
+}
+
+.menu{
+    display: none;
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    
+    text-align: center;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+li{
+    font-weight: 500;
+    font-size:2vw;
+}
+
+
+@media(max-width:800px){
+    body{
+        background-color: #ffd97d;
+    }
+
+   header{
+       flex-direction: row-reverse;
+       
+   }
+
+   figure{
+       padding: 2vw;
+   }
+   
+   h1{
+       display: initial;
+       font-size:6vw;
+       color:red;
+       font-weight: 700;
+   }
+
+    img{
+       width: 70px;
+   }
+
+   nav{
+       display: none;
+   }
+   
+   .container_menu{
+    padding: 2vw;
+    cursor:pointer;
+   }
+
+
+   .menu{
+       display: initial;
+   }
+ 
+   .box:hover::before{
+    content: 'Have coffe here';
+    font-weight: 700;
+    font-size:2vw;
+    color:#003e1f;
+    cursor:pointer;
+}
+
+}
+
+main{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    margin-top:5vh;
+}
+
+.mask{
+    width: 15vw;     
+} 
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    cursor:pointer;
+    
+}
+
+
+.box:hover::before{
+    content: 'Have coffe here';
+    position: absolute;
+    font-weight: 700;
+    font-size:2vw;
+    color:#57625c;
+    background-color:azure;
+    cursor:pointer;
+}
+
+
+/* .mask1:hover {
+    max-width: 600px;
+    height: 700px;
+    background: url('./cup.png') no-repeat;
+    cursor:pointer;
+    -webkit-mask-image: radial-gradient(circle, rgb(149, 63, 63) 50%, rgba(0, 0, 0, 0.5) 50%);
+    mask-image: radial-gradient(circle, rgb(153, 62, 62) 50%, rgba(197, 154, 154, 0.5) 50%);
+  } */
